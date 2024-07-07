@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="5dp"
+    android:elevation="1.3dp"
+    app:strokeWidth="1.3dp"
+    app:strokeColor="@color/purple1"
+    android:layout_margin="3dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/person"
+            android:layout_marginStart="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="person"
+            android:textSize="22sp"
+            android:layout_toEndOf="@id/user_image"
+            android:id="@+id/person_name"
+            android:layout_marginStart="11dp"
+            android:textColor="@color/ink"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_next_message"
+            tools:text="message"
+            android:layout_toEndOf="@id/user_image"
+            android:layout_below="@id/person_name"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="3dp"
+            android:textSize="13sp"
+            android:textStyle="normal"/>
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/message_not_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_check_24"
+            android:layout_toEndOf="@id/text_next_message"
+            android:layout_below="@id/person_name"
+            android:layout_marginStart="7dp"/>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/message_isChecked"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/checkable"
+            android:layout_toEndOf="@id/text_next_message"
+            android:layout_below="@id/person_name"
+            android:layout_marginStart="10dp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_alignParentEnd="true"
+            app:cardCornerRadius="13dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="18dp"
+            android:backgroundTint="@color/purple1">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="12"
+                android:textSize="15sp"
+                android:textColor="@color/ink"
+                android:id="@+id/message_count"
+                android:layout_margin="4dp"
+                android:layout_marginBottom="2dp"/>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

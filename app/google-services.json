@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "818837058286",
+    "project_id": "mymessenger-e31f4",
+    "storage_bucket": "mymessenger-e31f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818837058286:android:87cf49e48a41b113ed39ff",
+        "android_client_info": {
+          "package_name": "not.dev.mymessenger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD93qRs0lNae0poqDqSKFIfqx3Lzg-XSQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
