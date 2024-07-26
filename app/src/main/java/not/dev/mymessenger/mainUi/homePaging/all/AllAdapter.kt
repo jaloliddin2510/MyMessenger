@@ -1,4 +1,4 @@
-package not.dev.mymessenger.extentions
+package not.dev.mymessenger.mainUi.homePaging.all
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,10 +8,10 @@ import androidx.recyclerview.widget.RecyclerView
 import not.dev.mymessenger.dataBase.UserModel
 import not.dev.mymessenger.databinding.ItemUsersBinding
 
-class HomeUsersAdapter : ListAdapter<UserModel, HomeUsersAdapter.UserVH>(DiffCallback()) {
+class AllAdapter : ListAdapter<UserModel, AllAdapter.UserVH>(DiffCallback()) {
 
     inner class UserVH(
-        private val binding: ItemUsersBinding
+        private val binding: ItemUsersBinding,
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(userModel: UserModel) {
@@ -22,12 +22,15 @@ class HomeUsersAdapter : ListAdapter<UserModel, HomeUsersAdapter.UserVH>(DiffCal
         }
     }
 
-    class DiffCallback : DiffUtil.ItemCallback<UserModel>() {
-        override fun areItemsTheSame(oldItem: UserModel, newItem: UserModel): Boolean {
-            return oldItem == newItem // Yoki boshqa noyob identifikator
-        }
+    companion object {
+        class DiffCallback : DiffUtil.ItemCallback<UserModel>() {
+            override fun areItemsTheSame(oldItem: UserModel, newItem: UserModel): Boolean {
+                return oldItem == newItem
+            }
 
-        override fun areContentsTheSame(oldItem: UserModel, newItem: UserModel): Boolean {return oldItem == newItem
+            override fun areContentsTheSame(oldItem: UserModel, newItem: UserModel): Boolean {
+                return oldItem == newItem
+            }
         }
     }
 

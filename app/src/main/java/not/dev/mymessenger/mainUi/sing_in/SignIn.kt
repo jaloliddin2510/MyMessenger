@@ -7,23 +7,21 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import not.dev.mymessenger.databinding.ActivitySignInBinding
 import not.dev.mymessenger.extentions.toast
+import not.dev.mymessenger.mainUi.main.MainActivity
 import not.dev.mymessenger.mainUi.main.MainApplication
-import not.dev.mymessenger.mainUi.main.ui.MainActivity
 
 class SignIn : AppCompatActivity() {
     private lateinit var binding: ActivitySignInBinding
     private val viewModel: SignInViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(binding.root)
         binding = ActivitySignInBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         setUp()
-        toast("SignIn da")
     }
 
     fun setUp() = with(binding) {
         signInButton.setOnClickListener {
-            toast("error")
             viewModel.signIn(signInTextUsername.text.toString(), signInTextPassword.text.toString())
         }
         viewModel.signInEvent.observe(this@SignIn) {

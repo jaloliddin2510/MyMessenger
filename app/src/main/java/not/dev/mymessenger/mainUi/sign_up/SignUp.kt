@@ -7,8 +7,8 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import not.dev.mymessenger.databinding.ActivitySignUpBinding
 import not.dev.mymessenger.extentions.toast
+import not.dev.mymessenger.mainUi.main.MainActivity
 import not.dev.mymessenger.mainUi.main.MainApplication
-import not.dev.mymessenger.mainUi.main.ui.MainActivity
 import not.dev.mymessenger.mainUi.sing_in.SignIn
 
 @Suppress("UNREACHABLE_CODE")

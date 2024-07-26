@@ -82,7 +82,7 @@
                 android:textSize="16sp"
                 android:layout_marginHorizontal="32dp"
                 android:layout_marginTop="16dp"
-                android:backgroundTint="@color/ink"/>
+                android:backgroundTint="@color/pink77"/>
         </RelativeLayout>
         <Button
             android:layout_width="wrap_content"

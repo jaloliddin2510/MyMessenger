@@ -18,4 +18,5 @@
     <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="search">Search</string>
 </resources>

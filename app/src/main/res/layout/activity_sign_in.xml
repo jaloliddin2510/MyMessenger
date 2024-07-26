@@ -26,7 +26,7 @@
                 android:id="@+id/signIn_text_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/username" />
+                android:hint="@string/email" />
 
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
@@ -57,11 +57,11 @@
                 android:id="@+id/signIn_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sign_up"
+                android:text="@string/sign_in"
                 android:textSize="16sp"
                 android:layout_marginHorizontal="32dp"
                 android:layout_marginTop="16dp"
-                android:backgroundTint="@color/ink"/>
+                android:backgroundTint="@color/pink77"/>
         </RelativeLayout>
 
     </LinearLayout>
