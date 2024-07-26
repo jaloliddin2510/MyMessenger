@@ -1,17 +1,22 @@
 package not.dev.mymessenger.mainUi.main
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import not.dev.mymessenger.R
+import not.dev.mymessenger.databinding.ActivityMainBinding
 import not.dev.mymessenger.mainUi.homePaging.ViewPagerAdapter
+import not.dev.mymessenger.mainUi.profile.EditProfileActivity
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding= ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         Pager()
     }
     private fun Pager() {
@@ -27,5 +32,12 @@ class MainActivity : AppCompatActivity() {
                 else -> null
             }
         }.attach()
+    }
+
+    fun profile(){
+        binding.profile.setOnClickListener {
+            startActivity(Intent(this, EditProfileActivity::class.java))
+
+        }
     }
 }

@@ -14,22 +14,25 @@
         android:theme="@style/Theme.MyMessenger"
         tools:targetApi="31">
         <activity
+
+            android:name=".mainUi.sing_in.SignIn"
+            android:exported="true" />
+        <activity
+            android:name=".mainUi.profile.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainUi.sign_up.SignUp"
+            android:exported="true" />
+        <activity
             android:name=".mainUi.main.MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.MyMessenger.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".mainUi.sing_in.SignIn"
-            android:exported="true" />
-        <activity
-            android:name=".mainUi.sign_up.SignUp"
-            android:exported="true" />
     </application>
 
 </manifest>

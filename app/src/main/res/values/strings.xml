@@ -19,4 +19,7 @@
     <string name="sign_up">Sign Up</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="search">Search</string>
+    <string name="profile_token">profile_token</string>
+    <string name="name">Name</string>
+    <string name="help">help</string>
 </resources>
