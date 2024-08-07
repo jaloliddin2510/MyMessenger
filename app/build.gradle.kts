@@ -62,4 +62,7 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx.v240)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.livedata.ktx.v240)
+    implementation(libs.material.v170)
+    implementation(libs.androidx.viewpager2)
+    implementation(libs.play.services.auth)
 }

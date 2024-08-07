@@ -73,21 +73,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="12dp"
-            android:text="@string/profile_token"
+            android:layout_marginStart="42dp"
+            android:hint="@string/profile_token"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_marginStart="12dp"
-            android:layout_marginBottom="3dp"
-            android:text="@string/profile_token"
-            android:textColor="@color/blackC5"
-            android:textSize="10sp"
-            tools:ignore="SmallSp" />
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/baseline_token_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"/>
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -104,23 +100,94 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="12dp"
-            android:text="@string/email"
+            android:layout_marginStart="42dp"
+            android:hint="@string/email"
             android:textColor="@color/black"
             android:textSize="18sp" />
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/baseline_email_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"/>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/Add_account"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="1dp"
+        android:layout_marginVertical="3dp"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@color/pink77"
+        app:strokeWidth="2dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_marginStart="12dp"
-            android:layout_marginBottom="3dp"
-            android:text="@string/email"
-            android:textColor="@color/blackC5"
-            android:textSize="10sp"
-            tools:ignore="SmallSp" />
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="42dp"
+            android:hint="@string/add_account"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/baseline_person_add_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"/>
     </com.google.android.material.card.MaterialCardView>
 
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/log_out"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="1dp"
+        android:layout_marginVertical="3dp"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@color/pink77"
+        app:strokeWidth="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="42dp"
+            android:hint="@string/log_out"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/log_out_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/baseline_logout_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"/>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/delete_account"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="1dp"
+        android:layout_marginVertical="3dp"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@color/pink77"
+        app:strokeWidth="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="42dp"
+            android:hint="@string/delete_account"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/icons8_delete"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"/>
+    </com.google.android.material.card.MaterialCardView>
     <TextView
         android:id="@+id/help"
         android:layout_width="match_parent"

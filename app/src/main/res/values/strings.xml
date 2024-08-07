@@ -13,6 +13,9 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="email">email</string>
+    <string name="add_account">Add account</string>
+    <string name="log_out">Log out</string>
+    <string name="delete_account">Delete account</string>
     <string name="username">username</string>
     <string name="password">password</string>
     <string name="sign_in">Sign In</string>
@@ -22,4 +25,9 @@
     <string name="profile_token">profile_token</string>
     <string name="name">Name</string>
     <string name="help">help</string>
+    <string name="uno">Uno</string>
+    <string name="message">Message</string>
+    <string name="first_name">surename</string>
+    <string name="default_web_client_id">818837058286-t8d22ulo9mkml692brobmtp9oa7rie2a.apps.googleusercontent.com</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
 </resources>

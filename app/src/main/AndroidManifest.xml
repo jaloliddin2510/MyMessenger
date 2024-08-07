@@ -7,14 +7,19 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/messenger"
-        android:label="@string/app_name"
-        android:roundIcon="@drawable/messenger"
+        android:icon="@drawable/uno"
+        android:label="@string/uno"
+        android:roundIcon="@drawable/uno"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyMessenger"
         tools:targetApi="31">
         <activity
-
+            android:name=".mainUi.auth.AuthenticationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainUi.chat.ChatActivity"
+            android:exported="false" />
+        <activity
             android:name=".mainUi.sing_in.SignIn"
             android:exported="true" />
         <activity
@@ -26,10 +31,10 @@
         <activity
             android:name=".mainUi.main.MainActivity"
             android:exported="true"
-            android:label="@string/title_activity_main"
             android:theme="@style/Theme.MyMessenger.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

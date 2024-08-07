@@ -1,4 +1,4 @@
-package not.dev.mymessenger.extentions
+package not.dev.mymessenger.core.base.extentions
 
 import android.content.Context
 import android.widget.Toast

@@ -5,10 +5,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import not.dev.mymessenger.dataBase.UserModel
+import not.dev.mymessenger.core.base.dto.UserModel
 import not.dev.mymessenger.databinding.ItemUsersBinding
 
-class AllAdapter : ListAdapter<UserModel, AllAdapter.UserVH>(DiffCallback()) {
+class AllAdapter(private val clickListener: ((UserModel) -> Unit)) :
+    ListAdapter<UserModel, AllAdapter.UserVH>(DiffCallback()) {
 
     inner class UserVH(
         private val binding: ItemUsersBinding,
@@ -16,8 +17,11 @@ class AllAdapter : ListAdapter<UserModel, AllAdapter.UserVH>(DiffCallback()) {
 
         fun bind(userModel: UserModel) {
             with(binding) {
-                personName.text = userModel.username
+                personName.text = userModel.name
                 textNextMessage.text = userModel.userToken
+                root.setOnClickListener {
+                    clickListener.invoke(userModel)
+                }
             }
         }
     }

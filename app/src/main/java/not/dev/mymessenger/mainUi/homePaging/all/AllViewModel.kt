@@ -9,7 +9,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import not.dev.mymessenger.dataBase.UserModel
+import not.dev.mymessenger.core.base.dto.UserModel
 import not.dev.mymessenger.mainUi.main.MainApplication
 
 class AllViewModel : ViewModel() {
@@ -29,7 +29,11 @@ class AllViewModel : ViewModel() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 usersDataList.clear()
                 for (data in snapshot.children) {
-                    data.getValue(UserModel::class.java)?.let(usersDataList::add)
+                    data.getValue(UserModel::class.java)?.let{
+                        if (it.userToken!=MainApplication.sharedPreferences.getString(MainApplication.TOKEN,"")){
+                            usersDataList.add(it)
+                        }
+                    }
                 }
                 _users.value = GetChatEvent.Success(usersDataList)
             }

@@ -1,4 +1,4 @@
-package not.dev.mymessenger.base
+package not.dev.mymessenger.core.base.base
 
 import android.os.Bundle
 import android.view.View
